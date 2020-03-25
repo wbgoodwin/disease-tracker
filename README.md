@@ -1,1 +1,3 @@
 # disease-tracker
+
+Getting Started:
