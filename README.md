@@ -9,4 +9,12 @@ I recommend visual studio code, but any editor will work.
 
 
 Running the Project:
-1. Navigate to your 
+1. Navigate to /disease-tracker/frontend in the terminal
+2. Enter `npm start`
+3. The frontend should be running on http://localhost:3000
+
+backend to come later when we know what db we are using...
+
+
+Frameworks:
+* React (specifically react hooks) https://reactjs.org/docs/hooks-intro.html
