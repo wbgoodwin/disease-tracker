@@ -1,0 +1,38 @@
+# docker-compose.yml
+version: "0.0.1
+services:
+  neo4j:
+    image: postgres
+    hostname: postgres
+    environment:
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+
+  app:
+    build: ./server1
+    hostname: app
+    env_file: ./server1/.env
+    depends_on:
+      - postgres
+    links:
+      - postgres
+    ports:
+      - 4000:4000
+    environment:
+      WAIT_HOSTS: postgres:5432
+
+  server:
+    build: ./server2
+    hostname: client
+    env_file: ./server2/.env
+    ports:
+      - 3001:3001
+    depends_on:
+      - postgres
+    links:
+      - postgres
+    environment:
+      WAIT_HOSTS: postgres:5432
