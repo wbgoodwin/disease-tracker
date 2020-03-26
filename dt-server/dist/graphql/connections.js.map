@@ -1,0 +1,1 @@
+{"version":3,"file":"connections.js","sourceRoot":"","sources":["../../src/graphql/connections.ts"],"names":[],"mappings":";;;;;AAAA,gEAAiC;AACjC,MAAM,WAAW,GAAG;IAChB,GAAG,EAAE,uBAAuB;IAC5B,IAAI,EAAE,OAAO;IACb,QAAQ,EAAE,UAAU;CACvB,CAAC;AACW,QAAA,WAAW,GAAG,sBAAK,CAAC,MAAM,CAAC,WAAW,CAAC,GAAG,EAAE,sBAAK,CAAC,IAAI,CAAC,KAAK,CAAC,WAAW,CAAC,IAAI,EAAE,WAAW,CAAC,QAAQ,CAAC,CAAC,CAAC"}
